@@ -1,0 +1,51 @@
+.jumbotron {
+	background-image: url('../img/chuttersnap-248907-unsplash.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 30vh;
+
+	.container#header-bg {
+		background-color: rgba(0,0,0,0.9)
+	}
+}
+
+#job-postings,
+#leadership,
+#page-sections,
+#partner-row,
+#portfolio,
+#single-post {
+	.section-img {
+		height: 8rem;
+		overflow: hidden;
+		width: 100%;
+
+		img {
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			width: 100%;
+		}
+	}
+}
+
+#job-postings {
+	.section-img {
+		max-width: 25%;
+	}
+}
+
+#leadership {
+	.section-img {
+		width: 50%;
+	}
+}
+
+#partner-row,
+#portfolio,
+#single-post {
+	.section-img {
+		height: 15rem;
+	}
+}
