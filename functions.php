@@ -28,13 +28,16 @@ add_filter('nav_menu_css_class', 'sagatown_nav_menu_css_class');
 function sagatown_search_form_css_class($search_form) {
     // Form element
     $exp_search = explode('class="search-form"', $search_form);
-    $imp_search = implode('class="search-form form-inline my-2 my-lg-0 mr-sm-2 flex-column"', $exp_search);
+    $imp_search = implode('class="search-form form-inline flex-column py-5 py-lg-2"', $exp_search);
+    // Hide screen reader text
+    $exp_search = explode('class="screen-reader-text"', $imp_search);
+    $imp_search = implode('class="screen-reader-text invisible position-absolute"', $exp_search);
     // Text field input
     $exp_search = explode('class="search-field"', $imp_search);
-    $imp_search = implode('class="search-field form-control my-2"', $exp_search);
+    $imp_search = implode('class="search-field form-control mb-2 mx-auto mr-lg-0"', $exp_search);
     // Submit button
     $exp_search = explode('class="search-submit"', $imp_search);
-    $new_search = implode('class="search-submit btn btn-outline-success my-2 mx-auto ml-md-auto mr-md-0"', $exp_search);
+    $new_search = implode('class="search-submit btn btn-outline-success mx-auto mr-lg-0"', $exp_search);
 
     return $new_search;
 }
@@ -84,6 +87,12 @@ add_action('wp_enqueue_scripts', 'sagatown_load_css');
  * Enqueues scripts for the theme frontend.
  */
 function sagatown_load_js() {
+    wp_register_script('jquery_js', get_template_directory_uri() . '/js/jquery-3.2.1.min.js', '', false, true);
+    wp_enqueue_script('jquery_js');
+
+    wp_register_script('popper_js', get_template_directory_uri() . '/js/popper.min.js', '', false, true);
+    wp_enqueue_script('popper_js');
+
     wp_register_script('bootstrap_js', get_template_directory_uri() . '/js/bootstrap.js', '', false, true);
     wp_enqueue_script('bootstrap_js');
 
