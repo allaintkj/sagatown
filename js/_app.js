@@ -1,1 +1,5 @@
-(()=>{var __webpack_modules__={425:()=>{eval("\n\n//# sourceURL=webpack:///./js/_index.js?")},940:()=>{"use strict";eval("// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./scss/_App.scss?")}};__webpack_modules__[425]();var __webpack_exports__={};__webpack_modules__[940]()})();
+(()=>{var e={r:e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})}},t={};(()=>{"use strict";
+/*!************************!*\
+  !*** ./scss/_App.scss ***!
+  \************************/e.r(t)})()})();
+//# sourceMappingURL=_app.js.map

@@ -7,11 +7,6 @@
     <meta name="description" content="<?php bloginfo('description'); ?>">
     <title><?php bloginfo('name'); ?></title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="<?php bloginfo('template_url'); ?>/css/bootstrap.css" rel="stylesheet">
-    <!-- Tom's styles -->
-    <link href="<?php bloginfo('template_url'); ?>/css/style.css" rel="stylesheet">
-
     <?php wp_head(); ?>
 </head>
 
@@ -23,7 +18,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-between" id="navbarsExampleDefault">
+        <div class="collapse navbar-collapse justify-content-between">
             <?php
 
                 wp_nav_menu(array(

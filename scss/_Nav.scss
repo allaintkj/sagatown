@@ -1,0 +1,17 @@
+.navbar-nav .current_page_item {
+    a {
+        text-decoration: underline;
+    }
+}
+
+.navbar-nav .nav-link {
+    color: $white !important;
+
+    a {
+        color: inherit;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

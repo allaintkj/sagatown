@@ -1,3 +1,7 @@
+# Source maps
+*.css.map
+*.js.map
+
 # Logs
 logs
 *.log
