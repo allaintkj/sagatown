@@ -37,6 +37,8 @@
 			            <h2><?php the_title(); ?></h2>
 
 			            <p><?php the_excerpt(); ?></p>
+
+                        <p><a class="btn btn-secondary" href="<?php echo the_permalink(); ?>" role="button"><?php the_title(); ?> &raquo;</a></p>
 			        </div>
 
                 <?php endwhile;
