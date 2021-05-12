@@ -21,14 +21,14 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarsExampleDefault">
             <?php
 
-                wp_nav_menu(array(
-                    'menu'            => 'primary',
-                    'menu_class'      => 'navbar-nav pl-lg-5',
-                    'theme_location'  => 'primary',
-                    'container'       => 'ul'
-                ));
+            wp_nav_menu(array(
+                'menu'            => 'primary',
+                'menu_class'      => 'navbar-nav pl-lg-5',
+                'theme_location'  => 'primary',
+                'container'       => 'ul'
+            ));
 
-                get_search_form();
+            get_search_form();
 
             ?>
         </div>
@@ -38,6 +38,6 @@
         <div class="jumbotron jumbotron-fluid d-flex flex-column justify-content-center" style="background-image: url(<?php header_image(); ?>);">
             <div class="container py-5 text-center" id="header-bg">
                 <h1 class="display-3 text-light"><?php bloginfo('name'); ?></h1>
-                <p class="text-light"><?php bloginfo('description'); ?></p>
+                <p class="text-light"><?php echo get_post()->post_title; ?></p>
             </div>
         </div>

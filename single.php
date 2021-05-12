@@ -15,7 +15,6 @@
             <?php if (has_post_thumbnail()): ?>
                 
                 <div class="sagatown-img-container mb-2 position-relative">
-                    <?php the_post_thumbnail(); ?>
                 </div>
 
             <?php endif; ?>
