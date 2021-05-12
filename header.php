@@ -18,19 +18,21 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-between" id="navbarsExampleDefault">
-            <?php
+        <div class="sagatown__nav-wrapper">
+            <div class="collapse navbar-collapse justify-content-between" id="navbarsExampleDefault">
+                <?php
 
-            wp_nav_menu(array(
-                'menu'            => 'primary',
-                'menu_class'      => 'navbar-nav pl-lg-5',
-                'theme_location'  => 'primary',
-                'container'       => 'ul'
-            ));
+                wp_nav_menu(array(
+                    'menu'            => 'primary',
+                    'menu_class'      => 'navbar-nav pl-lg-5',
+                    'theme_location'  => 'primary',
+                    'container'       => 'ul'
+                ));
 
-            get_search_form();
+                get_search_form();
 
-            ?>
+                ?>
+            </div>
         </div>
     </nav>
 
