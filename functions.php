@@ -8,6 +8,11 @@
  */
 
 /* FUNCTIONS -------------------------------------------------- */
+require_once('functions/jobs.php');
+require_once('functions/leadership.php');
+require_once('functions/news.php');
+require_once('functions/partners.php');
+require_once('functions/portfolio.php');
 
 /**
  * Nav menu classes
