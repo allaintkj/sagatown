@@ -41,43 +41,32 @@ ul {
 	}
 }
 
-#job-postings,
-#leadership,
-#page-sections,
-#partner-row,
-#portfolio,
-#single-post {
-	.section-img {
-		height: 8rem;
-		overflow: hidden;
-		width: 100%;
-
-		img {
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%, -50%);
+.sagatown {
+	&__img {
+		&-wrapper {
+			height: 300px;
+			margin-bottom: 1em;
+			overflow: hidden;
+			position: relative;
 			width: 100%;
+
+			img {
+				height: auto;
+				left: 50%;
+				min-height: 100%;
+				max-width: 150%;
+				min-width: 100%;
+				position: absolute;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
 		}
 	}
 }
 
-#job-postings {
-	.section-img {
-		max-width: 25%;
-	}
-}
-
-#leadership {
-	.section-img {
-		width: 50%;
-	}
-}
-
-#partner-row,
-#portfolio,
-#single-post {
-	.section-img {
-		height: 15rem;
+.single-img {
+	.sagatown__img-wrapper {
+		height: 600px;
 	}
 }
 

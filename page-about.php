@@ -17,8 +17,7 @@
         <?php
 
         $args = array(
-            'category_name'  => 'leadership',
-            'post_type'      => 'post',
+            'post_type'      => 'leader',
             'orderby'        => 'post_title',
             'order'          => 'ASC',
             'posts_per_page' => -1
@@ -32,7 +31,8 @@
             <div class="col-md-4 py-3">
                 <?php if (has_post_thumbnail()): ?>
                     
-                <div class="sagatown-img-container mb-2 position-relative mx-auto">
+                <div class="sagatown__img-wrapper">
+                    <?php echo get_the_post_thumbnail($project); ?>
                 </div>
 
                 <?php endif; ?>

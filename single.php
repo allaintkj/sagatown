@@ -10,11 +10,12 @@
     <h1><?php the_title(); ?></h1>
     <hr />
 
-    <div class="row pt-5">
+    <div class="row">
         <div class="col single-img">
             <?php if (has_post_thumbnail()): ?>
-                
-                <div class="sagatown-img-container mb-2 position-relative">
+
+                <div class="sagatown__img-wrapper">
+                    <?php echo get_the_post_thumbnail($project); ?>
                 </div>
 
             <?php endif; ?>
